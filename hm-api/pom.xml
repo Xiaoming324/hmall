@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--common-->
+        <dependency>
+            <groupId>com.heima</groupId>
+            <artifactId>hm-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!--openFeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -28,6 +34,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
+        <!--swagger-->
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
