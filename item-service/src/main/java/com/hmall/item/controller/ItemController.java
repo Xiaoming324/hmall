@@ -36,6 +36,8 @@ public class ItemController {
     @ApiOperation("根据id批量查询商品")
     @GetMapping
     public List<ItemDTO> queryItemByIds(@RequestParam("ids") List<Long> ids) {
+        // 模拟业务延迟
+        // ThreadUtil.sleep(500);
         return itemService.queryItemByIds(ids);
     }
 
